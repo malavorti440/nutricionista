@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CALCULADORA PESO</title>
+  <script>
+    function imc()
+    {
+      let peso = parseFloat(document.getElementById('peso').value);
+      let talla = parseFloat(document.getElementById('talla').value);
+      if(talla > 0)
+        document.getElementById('result').value = peso / talla**2;
+        
+    }
+    function sexo()
+    {
+      let sexo = document.getElementById('operators').value;
+      if(sexo === 'h')
+        document.getElementById('result2').value = "Es Hombre";
+      if sexo === 'm')
+        document.getElementById('result2'.value = "Es Mujer";
+    }
+      
+  </script>  
+  
+</head>
+  
+
+  
+<body>
+
+  <form>
+    <label for="peso">PESO:</label><br>
+    <input type="number" step=0.01 id="peso"><br>
+    <label for="talla">TALLA:</label><br>
+    <input type="number" step=0.01 id="talla"><br>
+    <button onclick="imc();">CALCULAR</button><br>
+    <input type="number" step=0.01 id="result"/>
+  </form>  
+  
+  
+    <select id="operators">
+      <option value="h">Hombre: h</option>
+      <option value="m">Mujer: m</option>
+    </select>
+  <button onclick="sexo();">SELECCIONAR</button><br>
+  <input type="text" id="result2"/>
+ 
+    
+  
+
+  
+
+</body>
+</html>
