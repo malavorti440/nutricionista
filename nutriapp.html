@@ -8,7 +8,7 @@
          padding-right: 20px;
          padding-bottom: 50px;
          padding-left: 50px
-         
+      }   
       button {
          background-color: #4CAF50;
          border: none;
@@ -31,22 +31,17 @@
       let talla = parseFloat(document.getElementById('talla').value);
       const imcidealh = 22.5
       const imcidealm = 20.5
+      let imcpaciente = parseFloat(document.getElementById('result').value);
       if(talla > 0)
         document.getElementById('result').value = peso / talla**2;
         document.getElementById('result2').value = "operators";
         document.getElementById('result3').value = imcidealh * talla**2;
         document.getElementById('result4').value = imcidealm * talla**2;
+      if(imcpaciente < 20.5)
+         alert("No se puede calcular");
          
         
-     }
-     function imc2()
-     {
-        let imcpaciente = parseFloat(document.getElementById('result').value;
-        const imcidealmin = 20.5
-        if(imcpaciente < imcidealmin)
-          alert("No se puede calcular");   
-      
-      }
+    }
                                      
   </script>  
   
