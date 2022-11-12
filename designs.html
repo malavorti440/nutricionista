@@ -61,15 +61,21 @@
 <!-- Use it to style specific repeated elements! -->
 
 <style>
-    /* The "." tells CSS to target a "class" name. */
-    .character {
-        position: absolute;
-        right: 0px;
-        width: 300px
-        background-color:orange;
+    .character1 {
+        float: right;
+        width: 100px
         border: 15px solid gray;
         padding: 20px;
         margin: 20px;
+        background-color: orange;
+    }
+    .character2 {
+        float: left;
+        width: 100px
+        border: 15px solid gray;
+        padding: 20px;
+        margin: 20px;
+        background-color: orange;
     }
 </style>
 
@@ -78,13 +84,13 @@
     <h2>The Cast</h2>
 </div>
 <!-- The class attribute has been added to these <div> -->
-<div class="character">
+<div class="character1">
     <img src="https://www.codecombat.com/file/db/thang.type/529ab1a24b67a988ad000002/portrait.png">
     <h3>Cindy Archer</h3>
     <p>as Juliet</p>
 </div>
 
-<div class="character">
+<div class="character2">
     <img src="https://codecombat.com/file/db/thang.type/52e9adf7427172ae56002172/portrait.png">
     <h3>Jesus Christ</h3>
     <p>as Romeogre</p>
@@ -94,7 +100,7 @@
 <!-- The "id" attribute should be a unique identifier! -->
 
 <div class="descriptive">
-    <img id="character" src="/file/db/thang.type/52cee45a76ebd5196b00003a/portrait.png">
+    <img id="character" src="https://codecombat.com/file/db/thang.type/55652fb3b9effa46a1f775fd/portrait.png">
     <h2>Archer Person</h2>
     <ul>
         <li id="element1">Has a hood.</li>
